@@ -1,0 +1,27 @@
+import Link from 'next/link';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Image from 'next/image';
+import styles from './Footer.module.scss';
+
+const Footer = () => {
+  return (
+    <section className={styles['footer-section']}>
+      <div className={styles['footer-section-content']}>
+        <img src="/logo-white.png"  width={120} height={60} />
+        <p>Digital Infrastructure Powering  Real Estate</p>
+        <a href="mailto:muttaki4989@gmail.com">muttaki4989@gmail.com</a>
+        <div className={styles['button-container']}>
+          <a target="_blank" rel="noopener noreferrer" className={styles['icon']}>
+            <LinkedInIcon fontSize="large" sx={{ color: 'white', fontSize: 28 }} />
+          </a>
+          <a target="_blank" className={styles['icon']} rel="noopener noreferrer">
+            <TwitterIcon fontSize="large" sx={{ color: 'white', fontSize: 28 }} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Footer;
